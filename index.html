@@ -29,43 +29,51 @@
         
         const storyData = [
             { 
+                text: "During pregnancy, how does your mother take care of herself?", 
+                choices: [
+                    { text: "She eats a balanced diet and avoids harmful substances", change: 10, explanation: "Proper prenatal care supports brain development before birth.", next: 1 },
+                    { text: "She eats somewhat healthily but occasionally indulges", change: 5, explanation: "Some good nutrition helps, but consistency is key.", next: 1 },
+                    { text: "She smokes and consumes alcohol", change: -10, explanation: "Substance use during pregnancy can severely impact brain development.", next: 1 }
+                ]
+            },
+            { 
                 text: "You are a baby. How do your parents engage with you?", 
                 choices: [
-                    { text: "They occasionally talk and play with you", change: 5, explanation: "Some interaction is beneficial, but more engagement would be better.", next: 1 },
-                    { text: "They read to you every night", change: 10, explanation: "Reading helps develop language and cognitive skills.", next: 1 },
-                    { text: "They leave you alone with a tablet", change: -5, explanation: "Limited interaction may slow cognitive development.", next: 1 }
+                    { text: "They occasionally talk and play with you", change: 5, explanation: "Some interaction is beneficial, but more engagement would be better.", next: 2 },
+                    { text: "They read to you every night", change: 10, explanation: "Reading helps develop language and cognitive skills.", next: 2 },
+                    { text: "They leave you alone with a tablet", change: -5, explanation: "Limited interaction may slow cognitive development.", next: 2 }
                 ]
             },
             { 
                 text: "What kind of nutrition do you receive growing up?", 
                 choices: [
-                    { text: "A balanced diet with fruits, vegetables, and proteins", change: 10, explanation: "Proper nutrition supports brain development and cognitive function.", next: 2 },
-                    { text: "Mostly processed and fast food", change: -5, explanation: "Poor nutrition can negatively impact cognitive growth.", next: 2 },
-                    { text: "Irregular meals with some healthy options", change: 5, explanation: "Some nutrition is better than none, but consistency is key.", next: 2 }
+                    { text: "A balanced diet with fruits, vegetables, and proteins", change: 10, explanation: "Proper nutrition supports brain development and cognitive function.", next: 3 },
+                    { text: "Mostly processed and fast food", change: -5, explanation: "Poor nutrition can negatively impact cognitive growth.", next: 3 },
+                    { text: "Irregular meals with some healthy options", change: 5, explanation: "Some nutrition is better than none, but consistency is key.", next: 3 }
                 ]
             },
             { 
                 text: "What is your family's income?", 
                 choices: [
-                    { text: "Higher income with better opportunity and resources", change: 10, explanation: "Higher-income families often provide better educational opportunities.", next: 3 },
-                    { text: "Middle-class with some access to resources", change: 5, explanation: "A solid education is beneficial but may lack some elite opportunities.", next: 3 },
-                    { text: "Lower income with limited opportunities", change: -5, explanation: "Limited resources may impact learning and development.", next: 3 }
+                    { text: "Higher income with better opportunity and resources", change: 10, explanation: "Higher-income families often provide better educational opportunities.", next: 4 },
+                    { text: "Middle-class with some access to resources", change: 5, explanation: "A solid education is beneficial but may lack some elite opportunities.", next: 4 },
+                    { text: "Lower income with limited opportunities", change: -5, explanation: "Limited resources may impact learning and development.", next: 4 }
                 ]
             },
             { 
                 text: "How educated are your parents?", 
                 choices: [
-                    { text: "Neither has higher education", change: -5, explanation: "Limited parental education can result in fewer academic resources at home.", next: 4 },
-                    { text: "Both have college degrees or higher", change: 10, explanation: "Higher parental education correlates with increased academic support at home.", next: 4 },
-                    { text: "One has higher education, the other does not", change: 5, explanation: "Some exposure to educated environments helps cognitive development.", next: 4 }
+                    { text: "Neither has higher education", change: -5, explanation: "Limited parental education can result in fewer academic resources at home.", next: 5 },
+                    { text: "Both have college degrees or higher", change: 10, explanation: "Higher parental education correlates with increased academic support at home.", next: 5 },
+                    { text: "One has higher education, the other does not", change: 5, explanation: "Some exposure to educated environments helps cognitive development.", next: 5 }
                 ]
             },
             { 
                 text: "How physically active are you growing up?", 
                 choices: [
-                    { text: "Engage in regular exercise and sports", change: 10, explanation: "Physical activity enhances cognitive function and mental sharpness.", next: 5 },
-                    { text: "Occasionally active with some exercise", change: 5, explanation: "Some activity is beneficial, but more would be ideal.", next: 5 },
-                    { text: "Very little physical activity", change: -5, explanation: "Lack of physical activity can negatively impact cognitive performance.", next: 5 }
+                    { text: "Engage in regular exercise and sports", change: 10, explanation: "Physical activity enhances cognitive function and mental sharpness.", next: 6 },
+                    { text: "Occasionally active with some exercise", change: 5, explanation: "Some activity is beneficial, but more would be ideal.", next: 6 },
+                    { text: "Very little physical activity", change: -5, explanation: "Lack of physical activity can negatively impact cognitive performance.", next: 6 }
                 ]
             },
             { 
